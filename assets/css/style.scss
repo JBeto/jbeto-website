@@ -1,0 +1,10 @@
+---
+---
+
+/* Load framework first so theme can override styles */
+@import "bulma/sass/utilities/_all";
+@import "bulma/sass/components/navbar";
+
+@import "{{ site.theme }}";
+@import "projects";
+@import "navigation";
