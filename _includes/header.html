@@ -7,10 +7,10 @@
     </div>
     
     <h1 id="typed" class="custom-cursor"></h1>
-    <h2 id="typed2" class="custom-cursor hidden"></h2>
+    <h2 id="typed-subtitle" class="custom-cursor hidden"></h2>
 
     <!-- Navigation links --> 
-    <!-- <nav>
+    <nav>
       <ul>
         {%- for link in site.data.navigation -%}
           <li><a class="navbar-item" href="{{ link.url }}" target="
@@ -19,35 +19,16 @@
           {%- endif -%}">{{ link.title }}</a></li>
         {%- endfor -%}
       </ul>
-    </nav> -->
+    </nav>
   </div>
-<p>style</p>
-      <!-- Javascript -->
-    <!-- CDN for the Typed.js npm library -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9" 
-      integrity="sha384-Eu2brKGBwf2UJRIaYRelNnffdl8IzI17E5qR5uLe9cZr2Vm8cq9VxFuPRYbRnPdi" 
-      crossorigin="anonymous">
-    </script>
 
-    <!-- Types out name -->
-    <script defer>
-      function temp() {
-        document.getElementById("typed").classList.remove("custom-cursor");
-        document.getElementById("typed2").classList.remove("hidden");
-        var typed2 = new Typed('#typed2', {
-          strings: ['^1000 Software Developer'],
-          typeSpeed: 65,
-          showCursor: false,
-        });
-      }
+    <!-- Javascript -->
+  <!-- CDN for the Typed.js npm library -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9" 
+    integrity="sha384-Eu2brKGBwf2UJRIaYRelNnffdl8IzI17E5qR5uLe9cZr2Vm8cq9VxFuPRYbRnPdi" 
+    crossorigin="anonymous">
+  </script>
 
-      var typed = new Typed('#typed', {
-        stringsElement: '#typed-strings',
-        typeSpeed: 65,
-        showCursor: false,
-        onComplete: temp
-      });
-      
-    </script>
-
+  <!-- Types out name -->
+  <script src="{{ site.url }}/assets/js/type-header.js"></script>
 </header>
