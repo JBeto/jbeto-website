@@ -1,10 +1,12 @@
 ---
 ---
 
-/* Load framework first so theme can override styles */
-@import "bulma/sass/utilities/_all";
-@import "bulma/sass/components/navbar";
-
+/* site theme */
 @import "{{ site.theme }}";
+
+/* general purpose utilities */
+@import "utilities";
+
+/* other stylesheets needed */
 @import "projects";
-@import "navigation";
+@import "typing-cursor";

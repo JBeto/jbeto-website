@@ -1,9 +1,12 @@
+# metadata
+title: Joshua-Beto
+bio: Software Developer
+
+# styling
 theme: jekyll-theme-hacker
 
-title: Home
-description: Josh Beto
+# page configs
 permalink: none
-
 defaults:
   -
     scope:
