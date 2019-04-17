@@ -1,12 +1,11 @@
 ---
 ---
 
+/* import framework */
+@import "bulma-config.scss";
+
 /* site theme */
 @import "{{ site.theme }}";
-
-/* bulma components */
-@import "bulma/sass/utilities/_all";
-@import "bulma/sass/components/navbar";
 
 /* general purpose utilities */
 @import "utilities";

@@ -1,33 +1,42 @@
-<header>
-  <div class="container">
+<header class="is-paddingless">
+  <nav id="navbar" class="navbar is-black is-spaced">
+    <div class="container">
+      <div class="navbar-brand">
+        <!-- Typed Header --> 
+        <div id="typed-strings"><h1>{{ site.title }}</h1></div>
+        <div class="navbar-item">
+          <a class="has-no-underline" href="{{ site.url }}">
+              <h1 id="typed" class="custom-cursor"></h1>
+              <h2 id="typed-subtitle" class="custom-cursor is-invisible"></h2>
+          </a>
+        </div>
 
-    <!-- Typed Header --> 
-    <div id="typed-strings">
-      <h1>{{ site.title }}</h1>
+        <!-- Hamburger Icon -->
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <!-- Navigation links --> 
+          {%- for link in site.data.navigation -%}
+            <a class="navbar-item is-tab has-no-underline is-function" href="{{ link.url }}" target="
+            {%- if link.new_page -%} _blank 
+            {%- else -%} _self
+            {%- endif -%}">
+            {% if link.class_styles %} <span class="icon is-medium"><i class="{{ link.class_styles }}"></i></span> {% endif %}
+            {{ link.title }}</a>
+          {%- endfor -%}
+        </div>
+      </div>
     </div>
-    
-    <h1 id="typed" class="custom-cursor"></h1>
-    <h2 id="typed-subtitle" class="custom-cursor hidden"></h2>
-
-    <!-- Navigation links --> 
-    <nav>
-      <ul>
-        {%- for link in site.data.navigation -%}
-          <li><a class="navbar-item" href="{{ link.url }}" target="
-          {%- if link.new_page -%} _blank 
-          {%- else -%} _self
-          {%- endif -%}">{{ link.title }}</a></li>
-        {%- endfor -%}
-      </ul>
-    </nav>
-  </div>
+  </nav>
 
     <!-- Javascript -->
   <!-- CDN for the Typed.js npm library -->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9" 
-    integrity="sha384-Eu2brKGBwf2UJRIaYRelNnffdl8IzI17E5qR5uLe9cZr2Vm8cq9VxFuPRYbRnPdi" 
-    crossorigin="anonymous">
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9" integrity="sha384-Eu2brKGBwf2UJRIaYRelNnffdl8IzI17E5qR5uLe9cZr2Vm8cq9VxFuPRYbRnPdi" crossorigin="anonymous"></script>
 
   <!-- Types out name -->
   <script src="{{ site.url }}/assets/js/type-header.js"></script>
