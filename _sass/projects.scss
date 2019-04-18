@@ -1,0 +1,24 @@
+/* Holds the project description and links */
+
+.project {
+    position: relative;
+    display: inline-block;
+
+    &__description {
+        display: none;
+        position: absolute;
+        top: 7.5%;
+        left: 5%;
+    }
+
+    &:hover & {
+        &__image {
+            opacity: 0.15;
+            filter: alpha(opacity=15);
+            background: white;
+        }
+        &__description {
+            display: inline;
+        }
+    }
+}

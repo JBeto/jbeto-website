@@ -1,0 +1,10 @@
+/* Navbar Configuration */
+$navbar-background-color: inherit;
+$navbar-item-color: white;
+
+/* Import only what you need: bulma framework */
+@import "bulma/sass/utilities/_all";
+@import "bulma/sass/components/navbar";
+@import "bulma/sass/elements/icon";
+@import "bulma/sass/base/helpers";
+@import "bulma/sass/grid/columns";

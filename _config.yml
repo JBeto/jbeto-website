@@ -1,1 +1,19 @@
-theme: jekyll-theme-slate
+# metadata
+title: Joshua-Beto
+bio: Software Developer
+
+# styling
+theme: jekyll-theme-hacker
+
+# build
+build_version: 0.1.0
+
+# page configs
+permalink: none
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages"
+    values:
+      layout: "default"

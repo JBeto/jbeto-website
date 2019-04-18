@@ -1,0 +1,25 @@
+.has-no-underline {
+    &:link {
+        text-decoration: none;
+    }
+    &:visited {
+        text-decoration: none;
+    }
+    &:hover {
+        text-decoration: none;
+    }
+    &:active {
+        text-decoration: none;
+    }
+}
+
+.is-function {
+    &::after {
+        content: "();";
+        color: #b5e853;
+    }
+}
+
+.has-no-shadow {
+    text-shadow: none;
+}

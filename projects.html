@@ -1,0 +1,15 @@
+---
+title: projects
+---
+
+<table>
+{% tablerow project in site.data.projects cols:2 %}
+    <div class="project">
+        <img class="project__image" src="{{ project.image_url | absolute_url }}" alt="{{ project.image_alt }}" height=350 width=500>
+        <div class="project__description">
+            <h1>{{ project.title }}</h1>
+            <p>{{ project.description }}</p>
+        </div>
+    </div>
+{% endtablerow %}
+</table>
