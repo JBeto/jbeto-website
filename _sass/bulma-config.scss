@@ -2,7 +2,12 @@
 $navbar-background-color: inherit;
 $navbar-item-color: white;
 
-/* Import only what you need: bulma framework */
+/*  Import only what you need: bulma framework
+
+    License Information:
+        MIT License: https://opensource.org/licenses/MIT
+        Original Source: https://bulma.io/
+*/
 @import "bulma/sass/utilities/_all";
 @import "bulma/sass/components/navbar";
 @import "bulma/sass/elements/icon";

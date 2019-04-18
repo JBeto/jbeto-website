@@ -1,3 +1,4 @@
+/* Modifiers */
 .has-no-underline {
     &:link {
         text-decoration: none;
@@ -13,14 +14,16 @@
     }
 }
 
-/* makes whatever it's decorating look like a function call in code */
+.has-no-shadow {
+    text-shadow: none;
+}
+
+/* Decorators */
+
+/* Makes whatever it's decorating look like a function call in code */
 .is-function {
     &::after {
         content: "();";
         color: #b5e853;
     }
-}
-
-.has-no-shadow {
-    text-shadow: none;
 }

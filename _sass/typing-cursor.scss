@@ -1,4 +1,5 @@
-/* Original Work: https://codepen.io/merb/pen/yOwJjj */
+/*  MIT License: https://opensource.org/licenses/MIT
+    Original Work: https://codepen.io/merb/pen/yOwJjj */
 
 /* Add custom cursor so it auto inherits font styles */
 .custom-cursor::after {
@@ -25,5 +26,3 @@
     50% { opacity:0; }
     100% { opacity:1; }
 }
-
-/* End of original work */
