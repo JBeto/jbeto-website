@@ -1,12 +1,22 @@
-# metadata
-title: Joshua-Beto
-bio: Software Developer
+# Metadata / SEO
+title: Joshua Beto's Developer Website
+description: A personal website dedicated for professional development and showcasing my programming portfolio.
+url: www.joshuabeto.dev
+author: Joshua Beto
+social:
+  links:
+  - https://github.com/JBeto
+  - https://www.linkedin.com/in/joshua-beto-748aba134
 
 # styling
 theme: jekyll-theme-hacker
 
+# analytics
+google_analytics: UA-138600597-1
+
 # build
 build_version: 0.1.0
+exclude: ["README.md", "CNAME", "Gemfile", "Gemfile.lock", "LICENSE"]
 
 # page configs
 permalink: none

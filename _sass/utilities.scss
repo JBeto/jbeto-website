@@ -13,6 +13,7 @@
     }
 }
 
+/* makes whatever it's decorating look like a function call in code */
 .is-function {
     &::after {
         content: "();";

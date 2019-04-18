@@ -1,4 +1,6 @@
 ---
+title: Home
+description: A brief summary about who I am, what I do, and my qualifications as a software developer.
 ---
 
 # About

@@ -1,6 +1,6 @@
 /* Original Work: https://codepen.io/merb/pen/yOwJjj */
 
-/*Add custom cursor so it auto inherits font styles*/
+/* Add custom cursor so it auto inherits font styles */
 .custom-cursor::after {
 	content: '|';
 	display: inline;
@@ -9,7 +9,7 @@
 	animation: blink 0.7s infinite;
 }
 
-/*Custom cursor animation*/
+/* Custom cursor animation */
 @keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
