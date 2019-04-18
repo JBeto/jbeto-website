@@ -1,9 +1,6 @@
 - title: projects
   url: /projects.html
   class_styles: fa fa-folder
-#b5e853
-# - title: about
-#   url: /about.html
 
 - title: email
   url: mailto:j65beto@gmail.com
@@ -12,7 +9,7 @@
 - title: resume
   url: /jbeto_resume.pdf
   new_page: true
-  class_styles: fas fa-file
+  class_styles: fas fa-file-pdf
 
 - title: linkedin
   url: https://www.linkedin.com/in/joshua-beto-748aba134

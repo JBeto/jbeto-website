@@ -3,7 +3,7 @@ function typeSubtitle() {
     document.getElementById("typed-subtitle").classList.remove("is-invisible");
     var typed = new Typed('#typed-subtitle', {
         strings: ['^700 Software Developer'],
-        typeSpeed: 65,
+        typeSpeed: 90,
         showCursor: false
     });
 }
