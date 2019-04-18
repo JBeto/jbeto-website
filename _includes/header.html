@@ -23,7 +23,7 @@
         <div class="navbar-end">
           <!-- Navigation links --> 
           {%- for link in site.data.navigation -%}
-            <a class="navbar-item is-tab has-no-underline is-function has-no-shadow" href="{{ link.url }}" target="
+            <a class="navbar-item has-no-underline is-function has-no-shadow" href="{{ link.url }}" target="
             {%- if link.new_page -%} _blank 
             {%- else -%} _self
             {%- endif -%}">
