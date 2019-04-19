@@ -4,12 +4,13 @@ description: A portfolio of some of my coding projects in the past few years.
 ---
 
 <!-- Projects are placed to fill a column first, not row -->
-<div class="columns is-1 is-variable">
+<div class="columns">
+    <!-- Figure out how many elements need to go in each of the 2 columns -->
     {% assign elements = site.data.projects.size | divided_by: 2 %}
 
-    <div class="column">
+    <div class="column has-text-centered is-paddingless">
     {% for project in site.data.projects limit:elements %}
-        <div class="project is-centered">
+        <div class="project">
             <img class="project__image" src="{{ project.image_url | absolute_url }}" alt="{{ project.image_alt }}" height=350 width=500>
             <div class="project__description">
                 <h2>{{ project.title }}</h2>
@@ -19,7 +20,7 @@ description: A portfolio of some of my coding projects in the past few years.
     {% endfor %}
     </div>
 
-    <div class="column">
+    <div class="column has-text-centered is-paddingless">
     {% for project in site.data.projects offset:elements %}
         <div class="project">
             <img class="project__image" src="{{ project.image_url | absolute_url }}" alt="{{ project.image_alt }}" height=350 width=500>
