@@ -3,7 +3,7 @@
 # Twitter Geolocations
 - title: Twitter Geolocations
   description: Uses the Apache Lucene library to generate search queries from twitter geolocation data, and places them on Google Maps.
-  image_url: /assets/images/projects/blastoise_mega.jpg
+  image_url: /assets/images/projects/twitter-geolocations.png
   image_alt: [TBD]
   github: github.com
   demo: youtube.com
@@ -11,7 +11,7 @@
 # Tiles
 - title: Tiles
   description: My CS 120B Project!
-  image_url: /assets/images/projects/salamence_mega.jpg
+  image_url: /assets/images/projects/tilemap.png
   image_alt: [TBD]
   github: github.com
   demo: youtube.com
@@ -19,7 +19,7 @@
 # Guitar-Hero
 - title: Guitar-Hero
   description: My CS 120B Project!
-  image_url: /assets/images/projects/ghost.jpg
+  image_url: /assets/images/projects/guitar-hero.png
   image_alt: [TBD]
   github: github.com
   demo: youtube.com
@@ -27,15 +27,16 @@
 # Nothing is Sacred
 - title: Nothing is Sacred
   description: Our group's senior design project, a video game that features 
-  image_url: /assets/images/projects/lucario_statue.jpg
+  image_url: /assets/images/projects/nis.png
   image_alt: [TBD]
+  image_attribution: Team members Gabriel Cortez & Wendy Li
   github: github.com
   demo: youtube.com
 
 # Ray Tracer
 - title: Ray Tracer
   description: A basic ray tracer implementation, includes z-buffering, color interpolation, shadows, reflection, and refraction.
-  image_url: /assets/images/projects/blastoise_mega.jpg
+  image_url: /assets/images/projects/nis.png
   image_alt: [TBD]
   github: github.com
   demo: youtube.com
@@ -43,23 +44,8 @@
 # Google Hash Code
 - title: Google Hash Code 2019
   description: Our team's solution to Google's Hash Code 2019 competition, pictures.
-  image_url: /assets/images/projects/ghost.jpg
+  image_url: /assets/images/projects/hash-code.png
   image_alt: [TBD]
-  github: github.com
-  demo: youtube.com
-
-# MiniGL
-- title: MiniGL
-  description: A miniature implementation of OpenGL - supports basic transformations and rasterization.
-  image_url: /assets/images/projects/salamence_mega.jpg
-  image_alt: [TBD]
-  github: github.com
-  demo: youtube.com
-
-# ICPC
-- title: ICPC Collection
-  description: A collection of competitive programming problems and their solutions that my team or I have solved.
-  image_url: /assets/images/projects/lucario_statue.jpg
-  image_alt: [TBD]
+  image_attribution: AmrAtrash [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)]
   github: github.com
   demo: youtube.com

@@ -3,14 +3,31 @@ title: Projects
 description: A portfolio of some of my coding projects in the past few years.
 ---
 
-<table>
-{% tablerow project in site.data.projects cols:2 %}
-    <div class="project">
-        <img class="project__image" src="{{ project.image_url | absolute_url }}" alt="{{ project.image_alt }}" height=350 width=500>
-        <div class="project__description">
-            <h1>{{ project.title }}</h1>
-            <p>{{ project.description }}</p>
+<!-- Projects are placed to fill a column first, not row -->
+<div class="columns is-1 is-variable">
+    {% assign elements = site.data.projects.size | divided_by: 2 %}
+
+    <div class="column">
+    {% for project in site.data.projects limit:elements %}
+        <div class="project">
+            <img class="project__image" src="{{ project.image_url | absolute_url }}" alt="{{ project.image_alt }}" height=350 width=500>
+            <div class="project__description">
+                <h1>{{ project.title }}</h1>
+                <p>{{ project.description }}</p>
+            </div>
         </div>
+    {% endfor %}
     </div>
-{% endtablerow %}
-</table>
+
+    <div class="column">
+    {% for project in site.data.projects offset:elements %}
+        <div class="project">
+            <img class="project__image" src="{{ project.image_url | absolute_url }}" alt="{{ project.image_alt }}" height=350 width=500>
+            <div class="project__description">
+                <h1>{{ project.title }}</h1>
+                <p>{{ project.description }}</p>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
