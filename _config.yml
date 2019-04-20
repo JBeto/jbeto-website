@@ -18,6 +18,10 @@ google_analytics: UA-138600597-1
 build_version: 0.1.0
 exclude: ["README.md", "CNAME", "Gemfile", "Gemfile.lock", "LICENSE"]
 
+# plugins
+plugins:
+  - jekyll-sitemap
+  
 # page configs
 permalink: none
 defaults:
