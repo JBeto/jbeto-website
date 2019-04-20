@@ -8,54 +8,31 @@ description: A portfolio of some of my coding projects in the past few years.
     <!-- Figure out how many elements need to go in each of the 2 columns -->
     {% assign elements = site.data.projects.size | divided_by: 2 %}
 
-    <div class="column has-text-centered">
+    <div class="column">
     {% for project in site.data.projects limit:elements %}
         <div class="box">
-            <figure class="image is-5by4">
-                <img src="{{ project.image_url | absolute_url }}" alt="{{ project.image_alt }}">
+            <figure class="image is-5by4 is-marginless">
+                <img src="{{ project.image_url | absolute_url }}" alt="{{ project.image_alt }}" width=488 height=390.4>
             </figure>
-            <div>
+            <!-- <div>
                 <h2>{{ project.title }}</h2>
                 <p>{{ project.description }}</p>
-            </div>
+            </div> -->
         </div>
     {% endfor %}
     </div>
 
-    <div class="column has-text-centered">
+    <div class="column">
     {% for project in site.data.projects offset:elements %}
         <div class="box">
-            <figure class="image is-5by4">
-                <img src="{{ project.image_url | absolute_url }}" alt="{{ project.image_alt }}">
+            <figure class="image is-5by4 is-marginless">
+                <img src="{{ project.image_url | absolute_url }}" alt="{{ project.image_alt }}" width=488 height=390.4>
             </figure>
-            <div>
+            <!-- <div>
                 <h2>{{ project.title }}</h2>
                 <p>{{ project.description }}</p>
-            </div>
+            </div> -->
         </div>
     {% endfor %}
     </div>
 </div>
-
-<!-- <div class="column has-text-centered">
-        {% for project in site.data.projects limit:elements %}
-            <div class="box">
-                <figure class="image is-3by2">
-                    <img class="project__image" src="{{ project.image_url | absolute_url }}" alt="{{ project.image_alt }}" height=350 width=500>
-                </figure>
-                
-            </div>
-        {% endfor %}
-        </div>
-    
-        <div class="column has-text-centered">
-        {% for project in site.data.projects offset:elements %}
-            <div class="project box">
-                <img class="project__image" src="{{ project.image_url | absolute_url }}" alt="{{ project.image_alt }}" height=350 width=500>
-                <div class="project__description">
-                    <h2>{{ project.title }}</h2>
-                    <p>{{ project.description }}</p>
-                </div>
-            </div>
-        {% endfor %}
-        </div> -->
