@@ -1,16 +1,49 @@
 ---
 title: Projects
 description: A portfolio of some of my coding projects in the past few years.
+
+# Number of columns for projects, cannot be 0 (obviously)
+project_columns: 2
 ---
 
-<table>
-{% tablerow project in site.data.projects cols:2 %}
-    <div class="project">
-        <img class="project__image" src="{{ project.image_url | absolute_url }}" alt="{{ project.image_alt }}" height=350 width=500>
-        <div class="project__description">
-            <h1>{{ project.title }}</h1>
-            <p>{{ project.description }}</p>
+
+<div class="columns">
+    <!-- Determines how many elements should go in a column -->
+    {% assign column_elements = site.data.projects.size | divided_by: page.project_columns %}
+    {% if column_elements == 0 %} 
+        {% assign column_elements = 1 %}
+    {% endif %}
+
+    <!-- Projects are placed to fill a column first, not row -->
+    {% for project in site.data.projects %}
+        <!-- Start a new column -->
+        {% assign start = forloop.index | modulo: column_elements %}
+        {% if start == 1 %}
+            <div class="column">
+        {% endif %}
+
+        <div class="project box">
+            <figure class="project__image image is-5by4 is-marginless">
+                <img src="{{ project.image_url | absolute_url }}" alt="{{ project.image_alt }}" width=488 height=390.4>
+            </figure>
+            <div class="project__description">
+                <h2>{{ project.title }}</h2>
+                <p class="has-text-white">{{ project.description }}</p>
+                <div>
+                    {% if project.github %}
+                        <a href="{{ project.github }}" class="btn"><span class="icon is-large"><i class="fab fa-github"></i></span>GitHub</a>
+                    {% endif %}
+                    {% if project.demo %}
+                        <a href="{{ project.demo }}" class="btn"><span class="icon is-large"><i class="fab fa-youtube"></i></span>Demo</a>
+                    {% endif %}
+                </div>
+            </div>
         </div>
-    </div>
-{% endtablerow %}
-</table>
+    
+        <!-- End a column -->
+        {% assign end = forloop.index | modulo: column_elements %}
+        {% if end == 0 %}
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
