@@ -1,4 +1,3 @@
-/* Modifiers */
 .has-no-underline {
     &:link {
         text-decoration: none;
@@ -18,12 +17,21 @@
     text-shadow: none;
 }
 
-/* Decorators */
-
 /* Makes whatever it's decorating look like a function call in code */
 .is-function {
     &::after {
         content: "();";
         color: #b5e853;
     }
+}
+
+/* For sticky footer */
+.body-layout {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1 0 auto;
 }
