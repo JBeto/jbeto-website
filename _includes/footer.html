@@ -1,20 +1,17 @@
-<footer>
-    <hr />
-    <div class="footer">
-        <div class="columns is-vcentered">
-            <!--Left column, hidden on mobile devices-->
-            <div class="column has-text-centered is-hidden-mobile">
-                <p>Build Version: {{ site.build_version }}</p>
-            </div>
-            <!--Middle column-->
-            <div class="column has-text-centered is-half">
-                <p>The source code for this website can be found <a href="{{ site.github.repository_url }}">here</a>.</p>
-                <ul><li>Built with <strong>Bulma</strong> and <strong>Jekyll</strong>, powered by <strong>Github Pages</strong></li></ul>
-            </div>
-            <!--Right column-->
-            <div class="column has-text-centered">
-                <p>Last Updated: <time>{{ "now" | date: "%m-%d-%Y %H:%M" }}</time></p>
-            </div>
+<footer class="footer footer-break">
+    <div class="columns is-vcentered">
+        <!--Left column, hidden on mobile devices-->
+        <div class="column has-text-centered is-hidden-mobile">
+            <p>Build Version: {{ site.build_version }}</p>
         </div>
-    </div>  
+        <!--Middle column-->
+        <div class="column has-text-centered is-half">
+            <p>The source code for this website can be found <a href="{{ site.github.repository_url }}">here</a>.</p>
+            <span>Built with <strong>Bulma</strong> and <strong>Jekyll</strong>, powered by <strong>Github Pages</strong></span>
+        </div>
+        <!--Right column-->
+        <div class="column has-text-centered">
+            <p>Last Updated: <time>{{ "now" | date: "%m-%d-%Y %H:%M" }}</time></p>
+        </div>
+    </div>
 </footer>

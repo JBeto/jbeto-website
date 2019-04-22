@@ -1,3 +1,5 @@
+$highlight-green: #b5e853;
+
 .has-no-underline {
     &:link {
         text-decoration: none;
@@ -21,8 +23,12 @@
 .is-function {
     &::after {
         content: "();";
-        color: #b5e853;
+        color: $highlight-green;
     }
+}
+
+.footer-break {
+    border-top: 1px dashed $highlight-green;
 }
 
 /* For sticky footer */
