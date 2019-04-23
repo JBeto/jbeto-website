@@ -1,0 +1,27 @@
+$accordion-background-hover-color: #2a2f38;
+$accordion-background-color: transparent;
+$accordion-inactive: "[+]";
+$accordion-active: "[-]";
+
+.accordion {
+    &__header {
+        background-color: $accordion-background-color;
+        &:hover {
+            background-color: $accordion-background-hover-color;
+        }
+        &::after {
+            float: right;
+            content: $accordion-active;
+        }
+    }
+
+    &--collapsed & {
+        &__header::after {
+            float: right;
+            content: $accordion-inactive;
+        }
+        &__content {
+            display: none;
+        }
+    }
+}

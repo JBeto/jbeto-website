@@ -16,12 +16,17 @@ google_analytics: UA-138600597-1
 
 # build
 build_version: 0.1.0
-exclude: ["README.md", "CNAME", "Gemfile", "Gemfile.lock", "LICENSE"]
+exclude: ["README.md", "CNAME", "Gemfile", "Gemfile.lock", "LICENSE", "node_modules", "package.json", "package-lock.json"]
 
 # plugins
 plugins:
   - jekyll-sitemap
-  
+
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+
 # page configs
 permalink: none
 defaults:

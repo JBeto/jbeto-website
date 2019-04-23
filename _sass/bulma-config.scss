@@ -1,5 +1,6 @@
 /* Box Configuration */
-$box-background-color: #172125;
+$box-background-color: #2a2f38;
+$box-padding: 0.5rem;
 
 /* Navbar Configuration */
 $navbar-background-color: transparent;
@@ -16,6 +17,7 @@ $footer-padding: 0.5rem 1.5rem 0.5rem;
         MIT License: https://opensource.org/licenses/MIT
         Original Source: https://bulma.io/
 */
+
 @import "bulma/sass/utilities/_all";
 @import "bulma/sass/components/navbar";
 @import "bulma/sass/elements/icon";
