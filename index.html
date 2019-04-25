@@ -3,15 +3,9 @@ title: Home
 description: A brief summary about who I am, what I do, and my qualifications as a software developer.
 ---
 
-<section class="accordion">
-    <h2 class="accordion__header">About</h2>
-    <p class="accordion__content">Hi, this is about me!</p>
-</section>
-<section class="accordion">
-    <h2 class="accordion__header">Technologies</h2>
-    <p class="accordion__content">Hi, this is about me!</p>
-</section>
-<section class="accordion">
-    <h2 class="accordion__header">Experience</h2>
-    <p class="accordion__content">Hi, this is about me!</p>
-</section>
+{% for section in site.data.sections %}
+    <section class="accordion">
+        <h2 class="accordion__header">section.title</h2>
+        <p class="accordion__content">section.content</p>
+    </section>
+{% endfor %}

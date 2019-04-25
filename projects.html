@@ -28,7 +28,7 @@ project_columns: 2
             </figure>
             <div class="project__description">
                 <h2>{{ project.title }}</h2>
-                <p class="has-text-white">{{ project.description }}</p>
+                <p class="has-text-white">{{ project.summary }}</p>
                 <div>
                     {% if project.github %}
                         <a href="{{ project.github }}" class="btn"><span class="icon is-large"><i class="fab fa-github"></i></span>GitHub</a>
