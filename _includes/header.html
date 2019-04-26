@@ -32,8 +32,8 @@
 
             <!-- Creates the navigation link for that item -->
             <a class="navbar-item has-no-underline is-function has-no-shadow" href="{{ link.url }}" target="{{ target }}">
-            {% if link.class_styles %} 
-              <span class="icon is-medium"><i class="{{ link.class_styles }}"></i></span> 
+            {% if link.icon %}
+              <span class="icon is-medium"><i class="{{ link.icon }}"></i></span> 
             {% endif %}
               {{ link.title }}
             </a>
