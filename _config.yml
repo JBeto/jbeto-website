@@ -24,11 +24,11 @@ exclude:
   - "package.json"
   - "package-lock.json"
 
-sass:
-  # style: compressed
-  load_paths:
-    - _sass
-    - node_modules
+# sass:
+#   style: compressed
+#   load_paths:
+#     - _sass
+#     - node_modules
 
 plugins:
   - jekyll-sitemap
