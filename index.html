@@ -1,21 +1,46 @@
 ---
 title: Home
-description: A brief summary about who I am, what I do, and my qualifications as a software developer.
+description: A brief summary about who I am, what I do, and my portfolio as a software developer.
+
+# Number of columns for projects, cannot be 0 (obviously)
+project_columns: 2
 ---
 
-<section class="accordion">
-    <h2 class="accordion__header">About</h2>
-    <p class="accordion__content">Hi, this is about me!</p>
-</section>
-<section class="accordion">
-        <h2 class="accordion__header">About</h2>
-        <p class="accordion__content">Hi, this is about me!</p>
-    </section>
-    <section class="accordion">
-            <h2 class="accordion__header">About</h2>
-            <p class="accordion__content">Hi, this is about me!</p>
-        </section>
-        <section class="accordion">
-                <h2 class="accordion__header">About</h2>
-                <p class="accordion__content">Hi, this is about me!</p>
-            </section>
+<div class="tile is-ancestor is-vertical">
+    <div class="tile is-parent">
+        <div class="tile is-child">
+            {% include resume/about.html %}
+        </div>
+    </div>
+    <div class="tile">
+        <div class="tile is-vertical">
+            <div class="tile is-parent">
+                <div class="tile is-child">
+                    {% include resume/skills.html collapsed=true %}
+                </div>
+            </div>
+            <div class="tile is-parent">
+                <div class="tile is-child">
+                    {% include resume/experience.html collapsed=true %}
+                </div>
+            </div>
+        </div>
+        <div class="tile is-vertical">
+            <div class="tile is-parent">
+                <div class="tile is-child">
+                    {% include resume/community.html collapsed=true %}
+                </div>
+            </div>
+            <div class="tile is-parent">
+                <div class="tile is-child">
+                    {% include resume/contests.html collapsed=true %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tile is-parent">
+        <div class="tile is-child">
+            {% include resume/projects.html project_columns=page.project_columns collapsed=true %}
+        </div>
+    </div>
+</div>

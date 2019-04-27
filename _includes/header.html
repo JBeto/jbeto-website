@@ -3,7 +3,7 @@
     <div class="container">
       <div class="navbar-brand">
         
-        <!-- Typed Joshau-Beto header --> 
+        <!-- Typed Joshua-Beto header --> 
         <div id="typed-strings"><h1>Joshua-Beto</h1></div>
         <div class="navbar-item">
           <a class="has-no-underline" href="{{ site.url }}">
@@ -32,8 +32,8 @@
 
             <!-- Creates the navigation link for that item -->
             <a class="navbar-item has-no-underline is-function has-no-shadow" href="{{ link.url }}" target="{{ target }}">
-            {% if link.class_styles %} 
-              <span class="icon is-medium"><i class="{{ link.class_styles }}"></i></span> 
+            {% if link.icon %}
+              <span class="icon is-medium"><i aria-hidden="true" class="{{ link.icon }}"></i></span> 
             {% endif %}
               {{ link.title }}
             </a>

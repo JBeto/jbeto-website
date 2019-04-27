@@ -1,11 +1,12 @@
 /* Box Configuration */
-$box-background-color: #2a2f38;
+$box-background-color: $hacker-grey;
 $box-padding: 0.5rem;
 
 /* Navbar Configuration */
 $navbar-background-color: transparent;
-$navbar-item-color: #eaeaea;
-$navbar-item-hover-background-color: transparent;
+$navbar-item-color: $hacker-white;
+$navbar-item-hover-background-color: $hacker-grey;
+$navbar-item-hover-color: $hacker-white;
 
 /* Footer Configuration */
 $footer-background-color: transparent;
@@ -25,4 +26,5 @@ $footer-padding: 0.5rem 1.5rem 0.5rem;
 @import "bulma/sass/elements/box";
 @import "bulma/sass/base/helpers";
 @import "bulma/sass/grid/columns";
+@import "bulma/sass/grid/tiles";
 @import "bulma/sass/layout/footer";
