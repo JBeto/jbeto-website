@@ -1,15 +1,11 @@
-- title: projects
-  url: /projects.html
-  icon: fa fa-folder
+- title: resume
+  url: /jbeto_resume.pdf
+  icon: fas fa-folder
+  new_page: true
 
 - title: email
   url: mailto:j65beto@gmail.com
-  icon: fas fa-envelope-open-text
-
-- title: resume
-  url: /jbeto_resume.pdf
-  icon: fas fa-file-pdf
-  new_page: true
+  icon: fas fa-envelope
 
 - title: linkedin
   url: https://www.linkedin.com/in/joshua-beto-748aba134

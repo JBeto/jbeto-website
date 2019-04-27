@@ -1,5 +1,3 @@
-$highlight-green: #b5e853;
-
 .has-no-underline {
     &:link {
         text-decoration: none;
@@ -15,6 +13,24 @@ $highlight-green: #b5e853;
     }
 }
 
+.has-text-grey {
+    color: $hacker-grey;
+}
+
+.has-text-highlight-green {
+    color: $hacker-highlight-green;
+}
+
+.is-section-header {
+    font-weight: 700;
+    text-shadow: none;
+}
+
+.has-emphasis {
+    font-weight: 600;
+    color: $hacker-highlight-green;
+}
+
 .has-no-shadow {
     text-shadow: none;
 }
@@ -23,21 +39,6 @@ $highlight-green: #b5e853;
 .is-function {
     &::after {
         content: "();";
-        color: $highlight-green;
+        color: $hacker-highlight-green;
     }
-}
-
-.footer-break {
-    border-top: 1px dashed $highlight-green;
-}
-
-/* For sticky footer */
-.body-layout {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-
-.main-content {
-    flex: 1 0 auto;
 }
