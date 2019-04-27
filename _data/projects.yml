@@ -35,11 +35,11 @@
   image_url: /assets/images/projects/ray-tracer.png
   image_alt: A sample scene rendered by my ray tracer
   github: https://github.com/JBeto/Mini-Ray-Tracer
-  summary: A basic ray tracer implementation that includes z-buffering, reflection, and refraction.
+  summary: A basic ray tracer implementation that includes z-buffering, reflection, and refraction
 
 # Google Hash Code
 - title: Google Hash Code 2019
   image_url: /assets/images/projects/hash-code.png
   image_alt: Google Hash Code 2019 problem statement snippet
   github: https://github.com/JBeto/HashCode
-  summary: My teams' solution to the Google Hash Code 2019 qualification round of putting together a photo slideshow.
+  summary: My teams' solution to the Google Hash Code 2019 qualification round of putting together a photo slideshow
