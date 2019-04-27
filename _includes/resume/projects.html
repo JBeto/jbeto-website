@@ -25,10 +25,10 @@
                         <p class="has-text-white">{{ project.summary }}</p>
                         <div>
                             {% if project.github %}
-                                <a href="{{ project.github }}" class="btn"><span class="icon is-large"><i class="fab fa-github"></i></span>GitHub</a>
+                                <a href="{{ project.github }}" target="_blank" rel="noopener" class="btn"><span class="icon is-large"><i class="fab fa-github"></i></span>GitHub</a>
                             {% endif %}
                             {% if project.demo %}
-                                <a href="{{ project.demo }}" class="btn"><span class="icon is-large"><i class="fab fa-youtube"></i></span>Demo</a>
+                                <a href="{{ project.demo }}" target="_blank" rel="noopener" class="btn"><span class="icon is-large"><i class="fab fa-youtube"></i></span>Demo</a>
                             {% endif %}
                         </div>
                     </div>
