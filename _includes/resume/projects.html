@@ -1,0 +1,45 @@
+<section class="accordion {% if include.collapsed %} accordion--collapsed {% endif %}" id="projects">
+    <h2 class="accordion__header is-section-header">Projects</h2>
+    <div class="accordion__content">
+        <div class="columns">
+            <!-- Determines how many elements should go in a column -->
+            {% assign column_elements = site.data.projects.size | divided_by: include.project_columns %}
+            {% if column_elements == 0 %} 
+                {% assign column_elements = 1 %}
+            {% endif %}
+
+            <!-- Projects are placed to fill a column first, not row -->
+            {% for project in site.data.projects %}
+                <!-- Start a new column -->
+                {% assign start = forloop.index | modulo: column_elements %}
+                {% if start == 1 %}
+                    <div class="column">
+                {% endif %}
+
+                <div class="project box">
+                    <figure class="project__image image is-5by4 is-marginless">
+                        <img src="{{ project.image_url | absolute_url }}" alt="{{ project.image_alt }}" width=488 height=390.4>
+                    </figure>
+                    <div class="project__description">
+                        <h2>{{ project.title }}</h2>
+                        <p class="has-text-white">{{ project.summary }}</p>
+                        <div>
+                            {% if project.github %}
+                                <a href="{{ project.github }}" class="btn"><span class="icon is-large"><i class="fab fa-github"></i></span>GitHub</a>
+                            {% endif %}
+                            {% if project.demo %}
+                                <a href="{{ project.demo }}" class="btn"><span class="icon is-large"><i class="fab fa-youtube"></i></span>Demo</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- End a column -->
+                {% assign end = forloop.index | modulo: column_elements %}
+                {% if end == 0 %}
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

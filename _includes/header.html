@@ -3,8 +3,8 @@
     <div class="container">
       <div class="navbar-brand">
         
-        <!-- Typed Header --> 
-        <div id="typed-strings"><h1>{{ site.title }}</h1></div>
+        <!-- Typed Joshua-Beto header --> 
+        <div id="typed-strings"><h1>Joshua-Beto</h1></div>
         <div class="navbar-item">
           <a class="has-no-underline" href="{{ site.url }}">
               <h1 id="typed" class="custom-cursor"></h1>
@@ -21,15 +21,23 @@
       </div>
       <div class="navbar-menu">
         <div class="navbar-end">
-          <!-- Navigation links --> 
-          {%- for link in site.data.navigation -%}
-            <a class="navbar-item is-tab has-no-underline is-function has-no-shadow" href="{{ link.url }}" target="
-            {%- if link.new_page -%} _blank 
-            {%- else -%} _self
-            {%- endif -%}">
-            {% if link.class_styles %} <span class="icon is-medium"><i class="{{ link.class_styles }}"></i></span> {% endif %}
-            {{ link.title }}</a>
-          {%- endfor -%}
+          <!-- Navigation links -->
+          {% for link in site.data.navigation %}
+            <!-- Dicates whether the page will open on same or new tab -->
+            {% if link.new_page %}
+              {% assign target = "_blank" %}
+            {% else %}
+              {% assign target = "_self" %}
+            {% endif %}
+
+            <!-- Creates the navigation link for that item -->
+            <a class="navbar-item has-no-underline is-function has-no-shadow" href="{{ link.url }}" target="{{ target }}">
+            {% if link.icon %}
+              <span class="icon is-medium"><i aria-hidden="true" class="{{ link.icon }}"></i></span> 
+            {% endif %}
+              {{ link.title }}
+            </a>
+          {% endfor %}
         </div>
       </div>
     </div>

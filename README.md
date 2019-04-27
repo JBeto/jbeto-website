@@ -1,37 +1,58 @@
-## Welcome to GitHub Pages
+# My Website!
+###### Written by Joshua Beto
 
-You can use the [editor on GitHub](https://github.com/JBeto/jbeto-website/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Attribution
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+I would first like to thank John Pham for his website over at [pham.codes](https://pham.codes/) for basing the styling of my website off of.
 
-### Markdown
+The following are other sources that I used in creating this website (In no particular order):
+* JQuery
+* Jekyll
+* Typed.js
+* Bulma
+* Font Awesome
+* Github Pages
+* https://codepen.io/merb/pen/yOwJjj
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Issues
 
-```markdown
-Syntax highlighted code block
+* If you notice any issues with the website, feel free to contact me at j65beto@gmail.com or create an issue on the project page
 
-# Header 1
-## Header 2
-### Header 3
+## Build Command
+`bundle exec jekyll serve`
 
-- Bulleted
-- List
+## Documentation
 
-1. Numbered
-2. List
+For further updates when I finally get to re-doing this website in a couple months, the following describes architecture decisions
+made and the overall structure of the website.
 
-**Bold** and _Italic_ and `Code` text
+### Permalinks
 
-[Link](url) and ![Image](src)
-```
+For sake of simplicity, the directory structure is the permalink structure. Do not put pages in a pages directory and add custom permalinks. 
+It's a lot of maintenance for low gain.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Collections vs. _data
 
-### Jekyll Themes
+Use collections when you have need to publish actual documents. Documents are defined as html pages that include both content and style information. From previous research, collections are best thought of as an alternative to `_posts` or `_pages` used to group related documents. 
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JBeto/jbeto-website/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Do **not** use collections for storing only data or simple summaries/excerpts to be used by other documents. Those should be designated under `_data` as part of configuration. If a summary or description should become long enough to warrant it's own page, restructure it into a document as a separate page or part of a collection.
 
-### Support or Contact
+### Projects
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Projects can be edited via the `projects.yml` file under the `_data` directory. The order of the projects dictates how they are displayed in the page. 
+If you need to write a longer summary, you can use `>` after the `summary:` - this ignores any new lines following it within the content.
+
+In the future if project descriptions become long enough to warrant their own pages, you can restructure them as collections. As a future feature, just add a `hidden` tag in the front matter of each project in the collection to decide if a proejct should be included in the final build.
+
+### Sections
+
+For now since I have a simple website, you can edit each section in the `sections.yml` file under the `_data` directory. The order of each section dictates the order that it is displayed in the final build. Should a section become large enough, restructure that section into a document as a separate page or part of a collection called `_sections`.
+
+* **Note:** favicon.ico is there to stop that annoying error during testing. The actual file is empty.
+
+### Future
+
+- Aesthetics
+- Single page
+- CI (Travis)/Build automation
+- Find a better pipeline to include js scripts (Webpack?)

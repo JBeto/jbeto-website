@@ -2,64 +2,44 @@
 
 # Twitter Geolocations
 - title: Twitter Geolocations
-  description: Uses the Apache Lucene library to generate search queries from twitter geolocation data, and places them on Google Maps.
-  image_url: /assets/images/projects/blastoise_mega.jpg
-  image_alt: [TBD]
-  github: github.com
-  demo: youtube.com
+  image_url: /assets/images/projects/twitter-geolocations.png
+  image_alt: Screenshot of the Twitter Geolocations project
+  github: https://github.com/JBeto/finalproject-i_dont_have_1_lol
+  summary: A search engine indexer for Twitter Tweets built using Apache Lucene
 
 # Tiles
 - title: Tiles
-  description: My CS 120B Project!
-  image_url: /assets/images/projects/salamence_mega.jpg
-  image_alt: [TBD]
-  github: github.com
-  demo: youtube.com
+  image_url: /assets/images/projects/tilemap.png
+  image_alt: Procedurally generated Perlin Noise map
+  github: https://github.com/JBeto/3D_Tile_Map
+  summary: A procedurally generated Perlin Noise tilemap generator built using Unity3D
 
 # Guitar-Hero
 - title: Guitar-Hero
-  description: My CS 120B Project!
-  image_url: /assets/images/projects/ghost.jpg
-  image_alt: [TBD]
-  github: github.com
-  demo: youtube.com
+  image_url: /assets/images/projects/guitar-hero.png
+  image_alt: Screenshot of my demo of Guitar-Hero
+  github: https://github.com/JBeto/Guitar-Hero
+  demo: https://www.youtube.com/watch?v=Gd73GG9Ya7k
+  summary: An embedded systems project to imitate the actual game, Guitar Hero
 
 # Nothing is Sacred
 - title: Nothing is Sacred
-  description: Our group's senior design project, a video game that features 
-  image_url: /assets/images/projects/lucario_statue.jpg
-  image_alt: [TBD]
-  github: github.com
-  demo: youtube.com
+  image_url: /assets/images/projects/nis.png
+  image_alt: Opening image of our game, Nothing is Sacred
+  github: https://github.com/JBeto/RestingCowSoftware
+  demo: https://www.youtube.com/watch?v=6_0KMRR3Qag
+  summary: A game that features you as a black market smuggler trying to make a profit in a Communist regime
 
 # Ray Tracer
 - title: Ray Tracer
-  description: A basic ray tracer implementation, includes z-buffering, color interpolation, shadows, reflection, and refraction.
-  image_url: /assets/images/projects/blastoise_mega.jpg
-  image_alt: [TBD]
-  github: github.com
-  demo: youtube.com
+  image_url: /assets/images/projects/ray-tracer.png
+  image_alt: A sample scene rendered by my ray tracer
+  github: https://github.com/JBeto/Mini-Ray-Tracer
+  summary: A basic ray tracer implementation that includes z-buffering, reflection, and refraction.
 
 # Google Hash Code
 - title: Google Hash Code 2019
-  description: Our team's solution to Google's Hash Code 2019 competition, pictures.
-  image_url: /assets/images/projects/ghost.jpg
-  image_alt: [TBD]
-  github: github.com
-  demo: youtube.com
-
-# MiniGL
-- title: MiniGL
-  description: A miniature implementation of OpenGL - supports basic transformations and rasterization.
-  image_url: /assets/images/projects/salamence_mega.jpg
-  image_alt: [TBD]
-  github: github.com
-  demo: youtube.com
-
-# ICPC
-- title: ICPC Collection
-  description: A collection of competitive programming problems and their solutions that my team or I have solved.
-  image_url: /assets/images/projects/lucario_statue.jpg
-  image_alt: [TBD]
-  github: github.com
-  demo: youtube.com
+  image_url: /assets/images/projects/hash-code.png
+  image_alt: Google Hash Code 2019 problem statement snippet
+  github: https://github.com/JBeto/HashCode
+  summary: My teams' solution to the Google Hash Code 2019 qualification round of putting together a photo slideshow.

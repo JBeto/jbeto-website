@@ -1,0 +1,14 @@
+.footer-break {
+    border-top: 1px dashed $hacker-highlight-green;
+}
+
+/* For sticky footer */
+.body-layout {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1 0 auto;
+}

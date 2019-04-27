@@ -1,10 +1,30 @@
-/* Navbar Configuration */
-$navbar-background-color: inherit;
-$navbar-item-color: white;
+/* Box Configuration */
+$box-background-color: $hacker-grey;
+$box-padding: 0.5rem;
 
-/* Import only what you need: bulma framework */
+/* Navbar Configuration */
+$navbar-background-color: transparent;
+$navbar-item-color: $hacker-white;
+$navbar-item-hover-background-color: $hacker-grey;
+$navbar-item-hover-color: $hacker-white;
+
+/* Footer Configuration */
+$footer-background-color: transparent;
+$footer-padding: 0.5rem 1.5rem 0.5rem;
+
+/*  Import only what you need: bulma framework
+
+    License Information:
+        MIT License: https://opensource.org/licenses/MIT
+        Original Source: https://bulma.io/
+*/
+
 @import "bulma/sass/utilities/_all";
 @import "bulma/sass/components/navbar";
 @import "bulma/sass/elements/icon";
+@import "bulma/sass/elements/image";
+@import "bulma/sass/elements/box";
 @import "bulma/sass/base/helpers";
 @import "bulma/sass/grid/columns";
+@import "bulma/sass/grid/tiles";
+@import "bulma/sass/layout/footer";

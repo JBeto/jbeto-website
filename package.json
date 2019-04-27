@@ -1,0 +1,22 @@
+{
+  "name": "jbeto-website",
+  "version": "0.2.0",
+  "description": "Joshua Beto's developer website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JBeto/jbeto-website.git"
+  },
+  "author": "Joshua Beto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JBeto/jbeto-website/issues"
+  },
+  "homepage": "https://github.com/JBeto/jbeto-website#readme",
+  "dependencies": {
+    "bulma": "^0.7.4"
+  }
+}

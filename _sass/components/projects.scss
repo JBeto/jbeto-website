@@ -1,0 +1,32 @@
+/* Holds the project description and links */
+
+.project {
+    /* Important, make project relative so the description can be overlayed on top */
+    position: relative;
+
+    &__description {
+        visibility: hidden;
+        position: absolute;
+        padding: inherit;
+        word-wrap: break-word;
+
+        /* Essentially functions as padding for the inherited box padding */
+        top: 0.5rem;
+        left: 0.5rem;
+        right: 0.5rem;
+        bottom: 0.5rem;
+    }
+    
+    &:hover & {
+        /* css - project:hover project__image */
+        &__image {
+            opacity: 0.15;
+            filter: alpha(opacity=15);
+            background: white;
+        }
+        /* css - project:hover project__description */
+        &__description {
+            visibility: visible;
+        }
+    }
+}

@@ -1,15 +1,20 @@
 ---
 ---
 
-/* import framework */
+/* general purpose utilities */
+@import "colors";
+@import "modifiers";
+
+/* import Bulma framework */
 @import "bulma-config.scss";
 
 /* site theme */
 @import "{{ site.theme }}";
 
-/* general purpose utilities */
-@import "utilities";
+/* Custom elements */
+@import "elements/typing-cursor";
 
-/* other stylesheets needed */
-@import "projects";
-@import "typing-cursor";
+/* Custom components */
+@import "components/footer";
+@import "components/projects";
+@import "components/accordion";

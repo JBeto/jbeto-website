@@ -1,0 +1,44 @@
+.has-no-underline {
+    &:link {
+        text-decoration: none;
+    }
+    &:visited {
+        text-decoration: none;
+    }
+    &:hover {
+        text-decoration: none;
+    }
+    &:active {
+        text-decoration: none;
+    }
+}
+
+.has-text-grey {
+    color: $hacker-grey;
+}
+
+.has-text-highlight-green {
+    color: $hacker-highlight-green;
+}
+
+.is-section-header {
+    font-weight: 700;
+    text-shadow: none;
+}
+
+.has-emphasis {
+    font-weight: 600;
+    color: $hacker-highlight-green;
+}
+
+.has-no-shadow {
+    text-shadow: none;
+}
+
+/* Makes whatever it's decorating look like a function call in code */
+.is-function {
+    &::after {
+        content: "();";
+        color: $hacker-highlight-green;
+    }
+}
